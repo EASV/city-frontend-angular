@@ -1,0 +1,17 @@
+<h1>Create CityModel</h1>
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+<label>
+  ZipCode:
+  <input type="number" [formControl]="zipCode">
+</label>
+
+<div>
+  <div style="color: red; font-size: 14px" *ngIf="err">{{err}}</div>
+  <button (click)="saveCity()">Save CityModel</button>
+  {{errorResponse | json}}
+
+  <div *ngIf="cityCreated">City Created : {{cityCreated | json}}</div>
+</div>

@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "customerapp-y2020"
+    }
+  },
+  "defaultProject": "customerapp-y2020",
+  "cli": {
+    "analytics": "3f5e664d-b145-4090-92b4-6d9255fdb0f1"
+  }
 }
